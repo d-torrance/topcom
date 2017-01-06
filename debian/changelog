@@ -1,0 +1,5 @@
+topcom (0.17.8-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Doug Torrance <profzoom@cayke>  Thu, 05 Jan 2017 23:02:36 -0500
