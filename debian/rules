@@ -1,4 +1,6 @@
 #!/usr/bin/make -f
 
+export DEB_CPPFLAGS_MAINT_APPEND = -I/usr/include/cdd
+
 %:
 	dh $@  --with autoreconf
