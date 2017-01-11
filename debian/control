@@ -1,15 +1,16 @@
 Source: topcom
-Section: unknown
+Section: math
 Priority: optional
-Maintainer: Doug Torrance <profzoom@cayke>
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Doug Torrance <dtorrance@piedmont.edu>
+Build-Depends: debhelper (>= 9), dh-autoreconf, libcdd-dev, libgmp-dev
 Standards-Version: 3.9.8
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/topcom.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/topcom.git
+Homepage: http://www.rambau.wm.uni-bayreuth.de/TOPCOM/
+Vcs-Browser: https://anonscm.debian.org/git/debian-science/packages/topcom.git
+Vcs-Git: https://anonscm.debian.org/git/debian-science/packages/topcom.git
 
 Package: topcom
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: triangulations of point configurations and oriented matroids
  <insert long description, indented with spaces>
