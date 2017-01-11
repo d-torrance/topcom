@@ -1,0 +1,30 @@
+Description: Use system libraries.
+Author: Doug Torrance <dtorrance@piedmont.edu>
+Last-Update: 2017-01-10
+
+--- a/src-reg/Makefile.am
++++ b/src-reg/Makefile.am
+@@ -4,9 +4,7 @@
+ 
+ LDADD           = ../lib-src-reg/libCHECKREG.a \
+                   ../lib-src/libTOPCOM.a \
+-                  ../external/lib/libcddgmp.a \
+-                  ../external/lib/libgmpxx.a \
+-                  ../external/lib/libgmp.a
++		  -lcddgmp -lgmpxx -lgmp
+ 
+ AM_CPPFLAGS     = -I../lib-src
+ AM_CPPFLAGS    += -I../lib-src-reg
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -85,9 +85,7 @@
+ 
+ LDADD           = ../lib-src/libTOPCOM.a \
+                   ../lib-src-reg/libCHECKREG.a \
+-                  ../external/lib/libcddgmp.a \
+-                  ../external/lib/libgmpxx.a \
+-                  ../external/lib/libgmp.a
++		  -lcddgmp -lgmpxx -lgmp
+ 
+ AM_CPPFLAGS     = -I../lib-src
+ AM_CPPFLAGS    += -I../lib-src-reg
